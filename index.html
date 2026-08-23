@@ -1,31 +1,32 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>UOBCOM100</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UOBCOM100 QUIZZES</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
 </head>
-<body class="bg-gray-100 min-h-screen flex items-center justify-center p-4">
-  <div id="root"></div>
+<body class="bg-slate-900 text-white min-h-screen flex items-center justify-center p-4">
+    <div id="root"></div>
 
-  <script type="text/babel">
-    function App() {
-      return (
-        <div class="bg-white p-8 rounded-2xl shadow-xl max-w-md w-full text-center">
-          <h1 class="text-3xl font-bold text-blue-600 mb-4">أهلاً بك في منصة UOBCOM100</h1>
-          <p class="text-gray-600 mb-6">تم ربط المنصة بنجاح عبر GitHub Pages!</p>
-          <button onClick={() => alert('المنصة تعمل بنجاح!')} class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">
-            تجربة المنصة
-          </button>
-        </div>
-      );
-    }
-
-    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
-  </script>
+    <script type="text/babel">
+        function App() {
+            return (
+                <div class="bg-slate-800 p-8 rounded-2xl shadow-2xl max-w-lg w-full text-center border border-slate-700">
+                    <h1 class="text-3xl font-bold text-blue-400 mb-4">UOBCOM100 QUIZZES</h1>
+                    <p class="text-slate-300 mb-6">منصة الاختبارات والتدريب الإلكتروني</p>
+                    <div class="space-y-3">
+                        <button onClick={() => alert('جاري تحميل الاختبارات...')} class="w-full bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-xl font-semibold transition">
+                            بدء الاختبار
+                        </button>
+                    </div>
+                </div>
+            );
+        }
+        ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+    </script>
 </body>
 </html>
